@@ -132,7 +132,7 @@ class EthereumWallet extends EventContainer {
         const domain = {
             name,
             version,
-            chainId: 137,
+            chainId: 1,
             verifyingContract,
         };
 

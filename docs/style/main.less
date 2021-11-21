@@ -1,1 +1,90 @@
 @import "base.less";
+
+* {
+    font-family: Recipekorea !important;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #ffe6e1;
+    font-size       : 14.7px;
+    color           : #5A5A5A;
+    display         : flex;
+    align-items     : center;
+    height          : 100%;
+}
+
+.panel {
+    position        : relative;
+    width           : 328px;
+    height          : 650px;
+    margin          : auto;
+    background-image: url(/images/panel@2x.png);
+    background-size : contain;
+    padding         : 30px 22px 0;
+
+    >.dsc {
+        position: absolute;
+        top     : 20px;
+        right   : 24px;
+    }
+
+    >.mint-price,
+    >.mix-balance {
+        font-size: 10px;
+        padding  : 2px 10px;
+    }
+
+    >.title {
+        display   : block;
+        margin    : auto;
+        margin-top: 8px;
+    }
+
+    >.image {
+        display   : block;
+        margin    : auto;
+        margin-top: 8px;
+    }
+
+    >.wallet-address-container {
+        margin-top: 15px;
+        display   : flex;
+
+        h3 {
+            color    : #E94E1A;
+            flex-grow: 1;
+        }
+    }
+
+    >.mint-button {
+        display   : block;
+        margin    : auto;
+        margin-top: 8px;
+        text-align: center;
+    }
+
+    >.mint-count-container {
+        margin-top: 4px;
+        display   : flex;
+        font-size : 10px;
+
+        >span:first-of-type {
+            flex-grow: 1;
+        }
+    }
+
+    >.mint-bar-container {
+        margin-top      : 8px;
+        height          : 10px;
+        background-color: #c6c6c6;
+
+        >.mint-bar {
+            height          : 10px;
+            background-color: #e94e1a;
+        }
+    }
+}

@@ -1,0 +1,242 @@
+/*
+https://github.com/Hanul/sky-css-base
+v0.0.1 | 20210109
+Author: Sim Young Jae
+License: MIT
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*,
+*:focus {
+  outline: 0;
+}
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+a,
+button,
+input[type=button],
+input[type=submit],
+input[type=reset] {
+  cursor: pointer;
+}
+button,
+input {
+  border: none;
+}
+[hidden] {
+  display: none !important;
+}
+[contenteditable] {
+  -webkit-tap-highlight-color: transparent;
+}
+.float-wrapper:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+* {
+  font-family: Recipekorea !important;
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: #ffe6e1;
+  font-size: 14.7px;
+  color: #5A5A5A;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.panel {
+  position: relative;
+  width: 328px;
+  height: 650px;
+  margin: auto;
+  background-image: url(/images/panel@2x.png);
+  background-size: contain;
+  padding: 30px 22px 0;
+}
+.panel > .dsc {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+}
+.panel > .mint-price,
+.panel > .mix-balance {
+  font-size: 10px;
+  padding: 2px 10px;
+}
+.panel > .title {
+  display: block;
+  margin: auto;
+  margin-top: 8px;
+}
+.panel > .image {
+  display: block;
+  margin: auto;
+  margin-top: 8px;
+}
+.panel > .wallet-address-container {
+  margin-top: 15px;
+  display: flex;
+}
+.panel > .wallet-address-container h3 {
+  color: #E94E1A;
+  flex-grow: 1;
+}
+.panel > .mint-button {
+  display: block;
+  margin: auto;
+  margin-top: 8px;
+  text-align: center;
+}
+.panel > .mint-count-container {
+  margin-top: 4px;
+  display: flex;
+  font-size: 10px;
+}
+.panel > .mint-count-container > span:first-of-type {
+  flex-grow: 1;
+}
+.panel > .mint-bar-container {
+  margin-top: 8px;
+  height: 10px;
+  background-color: #c6c6c6;
+}
+.panel > .mint-bar-container > .mint-bar {
+  height: 10px;
+  background-color: #e94e1a;
+}
+
