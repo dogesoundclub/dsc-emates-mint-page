@@ -32,7 +32,7 @@ import EthereumWallet from "./ethereum/EthereumWallet";
         ),
         el(".mint-count-container",
             el("span", "MINT PROGRESS"),
-            mintCount = el("span", "8000/8000"),
+            mintCount = el("span"),
         ),
         el(".mint-bar-container",
             bar = el(".mint-bar"),
