@@ -47,8 +47,9 @@ import EthereumWallet from "./ethereum/EthereumWallet";
         walletAddress.empty().appendText(CommonUtil.shortenAddress(address));
     }
 
-    const price = await EMatesMinterContract.mintPrice();
-    mintPrice.empty().appendText(`MINT PRICE: ${CommonUtil.numberWithCommas(utils.formatEther(price))}`);
+    //const price = await EMatesMinterContract.mintPrice();
+    //mintPrice.empty().appendText(`MINT PRICE: ${CommonUtil.numberWithCommas(utils.formatEther(price))} EMIX`);
+    mintPrice.empty().appendText("MINT PRICE: 30 EMIX");
 
     const progress = async () => {
         const remains = (await EMatesMinterContract.limit()).sub(await EMatesContract.totalSupply()).toNumber();
@@ -56,7 +57,7 @@ import EthereumWallet from "./ethereum/EthereumWallet";
         mintCount.empty().appendText(`${TODAY_COUNT - remains}/${TODAY_COUNT}`);
         if (address !== undefined) {
             const balance = await EthereumMixContract.balanceOf(address);
-            mixBalance.empty().appendText(`YOUR EMIX: ${CommonUtil.numberWithCommas(utils.formatEther(balance))}`);
+            mixBalance.empty().appendText(`YOUR EMIX: ${CommonUtil.numberWithCommas(utils.formatEther(balance))} EMIX`);
         }
     };
     progress();
