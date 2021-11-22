@@ -61,5 +61,5 @@ import EthereumWallet from "./ethereum/EthereumWallet";
         }
     };
     progress();
-    setInterval(() => progress(), 1000);
+    setInterval(() => progress(), 2000);
 })();
