@@ -8,7 +8,7 @@ import EthereumWallet from "./ethereum/EthereumWallet";
 
 (async () => {
 
-    const TODAY_COUNT = 200;
+    const TODAY_COUNT = 400;
 
     let mintPrice: DomNode;
     let mixBalance: DomNode;
