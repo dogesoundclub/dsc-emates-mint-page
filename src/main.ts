@@ -53,8 +53,9 @@ import EthereumWallet from "./ethereum/EthereumWallet";
 
     const progress = async () => {
         const remains = (await EMatesMinterContract.limit()).sub(await EMatesContract.totalSupply()).toNumber();
-        bar.style({ width: `${(TODAY_COUNT - remains) / TODAY_COUNT * 100}%` });
-        mintCount.empty().appendText(`${TODAY_COUNT - remains}/${TODAY_COUNT}`);
+        const d = TODAY_COUNT - remains > TODAY_COUNT ? TODAY_COUNT : TODAY_COUNT - remains;
+        bar.style({ width: `${d / TODAY_COUNT * 100}%` });
+        mintCount.empty().appendText(`${d}/${TODAY_COUNT}`);
         if (address !== undefined) {
             const balance = await EthereumMixContract.balanceOf(address);
             mixBalance.empty().appendText(`YOUR EMIX: ${CommonUtil.numberWithCommas(utils.formatEther(balance))} EMIX`);
