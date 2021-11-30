@@ -1,6 +1,6 @@
 import { BigNumber } from "ethers";
 import EthereumWallet from "../ethereum/EthereumWallet";
-import EMatesMinterArtifact from "./abi/emates/artifacts/contracts/EMatesMinter.sol/EMatesMinter.json";
+import EMatesMinterV2Artifact from "./abi/emates/artifacts/contracts/EMatesMinterV2.sol/EMatesMinterV2.json";
 import { EMatesMinter } from "./abi/emates/typechain";
 import EMatesContract from "./EMatesContract";
 import EthereumContract from "./EthereumContract";
@@ -9,7 +9,7 @@ import EthereumMixContract from "./EthereumMixContract";
 class EMatesMinterContract extends EthereumContract<EMatesMinter> {
 
     constructor() {
-        super("0xE028509230bDF46383288bc98959f9DB52FF7Fcd", EMatesMinterArtifact.abi, []);
+        super("0xfB67b3868d5FDCAE0e93F254e50C4aC552EaE270", EMatesMinterV2Artifact.abi, []);
     }
 
     public async mintPrice(): Promise<BigNumber> {
